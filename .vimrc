@@ -1,3 +1,5 @@
+set runtimepath+=~/Projects/dotfiles/.vim
+
 call pathogen#infect()
 
 set nocompatible
