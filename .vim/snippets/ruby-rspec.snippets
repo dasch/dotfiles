@@ -1,0 +1,24 @@
+snippet spechelper
+	require 'spec_helper'
+snippet desc
+	describe ${1} do
+		${2}
+	end
+snippet context
+	context "${1}" do
+		${2}
+	end
+snippet it
+	it "${1}" do
+		${2}
+	end
+snippet subject
+	subject { ${1} }
+snippet its
+	its(:${1:attribute}) { should == ${2:value} }
+snippet let
+	let(:${1:name}) { ${2:value} }
+snippet letfac
+	let(:${1:name}) { create(:$1) }
+snippet double
+	${1:name} = double("${2:$1}")
