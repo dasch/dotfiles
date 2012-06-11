@@ -21,6 +21,9 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*.so,*/vendor/*,*/doc/*,*/tmp/*
 set tabstop=2 softtabstop=2
 set expandtab shiftwidth=2
 
+" Add some padding to the left
+set foldcolumn=1
+
 " Prevent Vim from clobbering the scrollback buffer. See
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
