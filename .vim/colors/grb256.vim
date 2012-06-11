@@ -15,6 +15,7 @@ hi StatusLineNC ctermbg=234 ctermfg=white
 hi StatusLine ctermbg=17 ctermfg=white
 
 hi VertSplit ctermbg=234 ctermfg=234
+hi FoldColumn ctermbg=NONE
 
 hi LineNr ctermfg=darkgray
 hi CursorLine     guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=234
