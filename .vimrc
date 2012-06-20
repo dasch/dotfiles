@@ -162,10 +162,10 @@ function! RunTests(filename)
         if a:filename == ""
             let args = "--format Fuubar"
         else
-            let args = "--color"
+            let args = ""
         end
 
-        exec ":!rspec " . args . " " . a:filename
+        exec ":!rspec --color " . args . " " . a:filename
     end
 endfunction
 
