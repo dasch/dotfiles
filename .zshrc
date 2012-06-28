@@ -70,5 +70,3 @@ hitch() {
 }
 
 alias unhitch='hitch -u'
-
-hitch
