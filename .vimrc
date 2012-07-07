@@ -227,3 +227,14 @@ function! AlternateForCurrentFile()
   return new_file
 endfunction
 nnoremap ,, :call OpenTestAlternate()<CR>
+
+function! ConvertToMultiLineHash()
+  :normal! _
+  call search("=>")
+  :normal! B
+  :normal! vg_h
+  :normal S}
+  :normal! a
+  :normal! g_hik
+  :.s/, /,\r\t/g
+endfunction
