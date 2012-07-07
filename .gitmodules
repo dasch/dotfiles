@@ -1,0 +1,3 @@
+[submodule ".vim/bundle/clojure"]
+	path = .vim/bundle/clojure
+	url = git://github.com/vim-scripts/VimClojure.git
