@@ -29,6 +29,8 @@ set foldcolumn=1
 " http://www.shallowsky.com/linux/noaltscreen.html
 set t_ti= t_te=
 
+abbrev serach search
+
 " Enable cursorline for the current window.
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
