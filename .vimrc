@@ -11,7 +11,8 @@ filetype plugin on
 
 set number
 set hidden
-set incsearch ignorecase smartcase
+set showcmd
+set hlsearch incsearch ignorecase smartcase
 set nofoldenable
 set laststatus=2
 set statusline=\ %f%=Line:\ %03l\ \ Column:\ %03c\ \   
