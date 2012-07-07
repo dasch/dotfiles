@@ -1,3 +1,6 @@
 [submodule ".vim/bundle/clojure"]
 	path = .vim/bundle/clojure
 	url = git://github.com/vim-scripts/VimClojure.git
+[submodule ".vim/bundle/xterm-color-table"]
+	path = .vim/bundle/xterm-color-table
+	url = git://github.com/guns/xterm-color-table.vim.git
