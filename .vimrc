@@ -199,13 +199,19 @@ function! AlternateForCurrentFile()
     \ match(current_file, '\<helpers\>') != -1
 
   if going_to_spec
+    let new_file = substitute(new_file, '\.rb$', '_spec.rb', '')
+    let new_file = substitute(new_file, '\.html\.erb$', '_spec.rb', '')
+
     if in_app
       let new_file = substitute(new_file, '^app/', '', '')
     else
-      let new_file = substitute(new_file, '^lib/' . lib_name . '/', '', '')
+      let new_file = substitute(new_file, '^lib/', '', '')
+
+      if !filereadable('spec/' . new_file)
+        let new_file = substitute(new_file, '^' . lib_name . '/', '', '')
+      end
     end
-    let new_file = substitute(new_file, '\.rb$', '_spec.rb', '')
-    let new_file = substitute(new_file, '\.html\.erb$', '_spec.rb', '')
+
     let new_file = 'spec/' . new_file
   else
     let going_to_view = match(current_file, '\<views\>') != -1
@@ -221,6 +227,7 @@ function! AlternateForCurrentFile()
     if in_app
       let new_file = 'app/' . new_file
     else
+      let new_file = substitute(new_file, '^' . lib_name . '/', '', '')
       let new_file = 'lib/' . lib_name . '/' . new_file
     end
   endif
