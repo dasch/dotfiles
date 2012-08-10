@@ -52,9 +52,8 @@ endif
 
 " Command-T mappings
 nnoremap <silent> <C-t> :CommandT<CR>
-nnoremap <silent> <leader>t :CommandT<CR>
+nnoremap <silent> <C-g> :CommandT app/<CR>
 nnoremap <silent> <C-y> :CommandTBuffer<CR>
-nnoremap <silent> <leader>y :CommandTBuffer<CR>
 nnoremap <silent> <leader>o :CommandTTag<CR>
 
 " Don't allow using the arrow keys in normal mode
