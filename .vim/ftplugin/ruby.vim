@@ -1,8 +1,5 @@
 let ruby_operators=1
 
-" Regard : as part of words.
-set iskeyword+=:
-
 " Insert a hash rocket with <c-l>
 imap <c-l> <space>=><space>
 
