@@ -50,6 +50,9 @@ else
   set scrolloff=8
 endif
 
+" Gundo mappings
+nnoremap <F5> :GundoToggle<CR>
+
 " Command-T mappings
 nnoremap <silent> <C-t> :CommandT<CR>
 nnoremap <silent> <C-g> :CommandT app/<CR>
