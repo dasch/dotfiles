@@ -50,6 +50,12 @@ else
   set scrolloff=8
 endif
 
+" Move lines up or down
+nmap <C-k> ddkP
+nmap <C-j> ddp
+vmap <C-k> xkP`[V`]
+vmap <C-j> xp`[V`]
+
 " Gundo mappings
 nnoremap <F5> :GundoToggle<CR>
 
