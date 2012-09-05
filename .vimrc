@@ -85,6 +85,11 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 " Open the vimrc in a new tab
 map <F11> :tabe ~/.vimrc
 
+" Source the vimrc file after saving it
+if has("autocmd")
+  autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
 command! W :w
 
 let g:CommandTMaxHeight=12
