@@ -85,9 +85,15 @@ map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans
 " Open the vimrc in a new tab
 map <F11> :tabe ~/.vimrc
 
-" Source the vimrc file after saving it
 if has("autocmd")
+  " Source the vimrc file after saving it
   autocmd bufwritepost .vimrc source $MYVIMRC
+
+  " Restore cursor position when opening a file
+  autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
 endif
 
 command! W :w
