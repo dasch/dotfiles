@@ -81,13 +81,7 @@ function! RunTests(filename)
     if match(a:filename, '_test\.rb$') != -1
         exec ":!testrb -Itest -I. " . a:filename
     else
-        if a:filename == ""
-            let args = "--format Fuubar"
-        else
-            let args = ""
-        end
-
-        exec ":!rspec --color " . args . " " . a:filename
+        exec ":!bundle exec rspec --color " . a:filename
     end
 endfunction
 
