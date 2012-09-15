@@ -81,7 +81,7 @@ function! RunTests(filename)
     if match(a:filename, '_test\.rb$') != -1
         exec ":!testrb -Itest -I. " . a:filename
     else
-        exec ":!bundle exec rspec --color " . a:filename
+        exec ":!rspec " . a:filename
     end
 endfunction
 
