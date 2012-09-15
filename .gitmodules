@@ -4,3 +4,6 @@
 [submodule ".vim/bundle/xterm-color-table"]
 	path = .vim/bundle/xterm-color-table
 	url = git://github.com/guns/xterm-color-table.vim.git
+[submodule ".vim/bundle/handlebars"]
+	path = .vim/bundle/handlebars
+	url = git://github.com/nono/vim-handlebars.git
