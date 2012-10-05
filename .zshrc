@@ -43,7 +43,6 @@ unsetopt correct_all
 ZENDESK_HOST="zendesk.dev"
 
 # Customize to your needs...
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
 export STATSD_PATH=/usr/local/lib/node_modules/statsd/stats.js
