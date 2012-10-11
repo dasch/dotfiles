@@ -51,7 +51,8 @@ export STATSD_PATH=/usr/local/lib/node_modules/statsd/stats.js
 export EDITOR=vim
 
 # Don't clear the screen after exiting less
-export LESS="-RX"
+export LESS="-FRX"
+export PAGER="less -FR"
 
 # Unbreak broken, non-colored terminal
 export TERM='xterm-color'
