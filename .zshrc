@@ -44,6 +44,7 @@ ZENDESK_HOST="zendesk.dev"
 
 # Customize to your needs...
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 export STATSD_PATH=/usr/local/lib/node_modules/statsd/stats.js
 
