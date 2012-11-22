@@ -42,10 +42,6 @@ unsetopt correct_all
 
 ZENDESK_HOST="zendesk.dev"
 
-# Customize to your needs...
-export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-
 export STATSD_PATH=/usr/local/lib/node_modules/statsd/stats.js
 
 export EDITOR=vim
@@ -72,6 +68,10 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 
 eval "$(rbenv init -)"
+
+# Customize to your needs...
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Hitch setup
 hitch() {
