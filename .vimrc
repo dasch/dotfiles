@@ -79,6 +79,9 @@ map tl :tablast<CR>
 map tt :tabedit<Space>
 map tn :tabnew<Space>
 
+" Use <Enter> to move to the next item in the quickview window
+map <Enter> :cn<CR>
+
 " Show the name of the symbol under the cursor
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'. synIDattr(synID(line("."),col("."),0),"name") . "> lo<". synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
 
