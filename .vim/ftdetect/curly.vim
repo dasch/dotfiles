@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.curly		set filetype=mustache
+au BufNewFile,BufRead *.curly		set syntax=handlebars
