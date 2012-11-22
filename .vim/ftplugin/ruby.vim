@@ -35,7 +35,7 @@ function! PromoteToLet()
   " :normal! A }
 endfunction
 :command! PromoteToLet :call PromoteToLet()
-:map <leader>p :PromoteToLet<cr><cr>
+:map <buffer> <leader>p :PromoteToLet<cr><cr>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " RUNNING TESTS
